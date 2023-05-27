@@ -4,6 +4,10 @@ import '@nomiclabs/hardhat-waffle'
 import 'hardhat-typechain'
 import 'hardhat-watcher'
 
+import { config } from 'dotenv'
+
+config()
+
 const LOW_OPTIMIZER_COMPILER_SETTINGS = {
   version: '0.7.6',
   settings: {
@@ -70,13 +74,15 @@ export default {
       url: `https://arbitrum-rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`,
     },
     arbitrum: {
-      url: `https://arbitrum-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      url: `${process.env.ARBITRUM_RPC}`,
+      accounts: [process.env.DEV_KEY],
     },
     optimismKovan: {
       url: `https://optimism-kovan.infura.io/v3/${process.env.INFURA_API_KEY}`,
     },
     optimism: {
-      url: `https://optimism-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      url: `${process.env.OPTIMISM_RPC}`,
+      accounts: [process.env.DEV_KEY],
     },
   },
   etherscan: {
