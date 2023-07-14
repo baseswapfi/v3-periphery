@@ -64,7 +64,10 @@
   },
   "scripts": {
     "compile": "hardhat compile",
+    "build": "forge build",
     "test": "hardhat test",
-    "deploy": "npx hardhat run ./scripts/deploy.js"
+    "forge:test": "forge test -vvv",
+    "deploy": "npx hardhat run ./scripts/deploy.ts --network",
+    "start": "npx hardhat node"
   }
 }

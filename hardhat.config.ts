@@ -8,6 +8,8 @@ import { config } from 'dotenv'
 
 config()
 
+const accounts = [process.env.DEV_KEY]
+
 const LOW_OPTIMIZER_COMPILER_SETTINGS = {
   version: '0.7.6',
   settings: {
@@ -75,14 +77,21 @@ export default {
     },
     arbitrum: {
       url: `${process.env.ARBITRUM_RPC}`,
-      accounts: [process.env.DEV_KEY],
+      accounts,
     },
     optimismKovan: {
       url: `https://optimism-kovan.infura.io/v3/${process.env.INFURA_API_KEY}`,
     },
     optimism: {
       url: `${process.env.OPTIMISM_RPC}`,
-      accounts: [process.env.DEV_KEY],
+      accounts,
+    },
+    base: {
+      url: `${process.env.BASE_RPC}`,
+      accounts,
+      chainId: 8453,
+      gas: 500000,
+      gasPrice: 100,
     },
   },
   etherscan: {

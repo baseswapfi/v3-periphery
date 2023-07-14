@@ -45,7 +45,10 @@ contract SwapRouter is
         address tokenB,
         uint24 fee
     ) private view returns (IUniswapV3Pool) {
-        return IUniswapV3Pool(PoolAddress.computeAddress(factory, PoolAddress.getPoolKey(tokenA, tokenB, fee)));
+        return
+            IUniswapV3Pool(
+                PoolAddress.computeAddress(factory, PoolAddress.getPoolKey(tokenA, tokenB, fee))
+            );
     }
 
     struct SwapCallbackData {
@@ -123,7 +126,10 @@ contract SwapRouter is
             params.amountIn,
             params.recipient,
             params.sqrtPriceLimitX96,
-            SwapCallbackData({path: abi.encodePacked(params.tokenIn, params.fee, params.tokenOut), payer: msg.sender})
+            SwapCallbackData({
+                path: abi.encodePacked(params.tokenIn, params.fee, params.tokenOut),
+                payer: msg.sender
+            })
         );
         require(amountOut >= params.amountOutMinimum, 'Too little received');
     }
@@ -212,7 +218,10 @@ contract SwapRouter is
             params.amountOut,
             params.recipient,
             params.sqrtPriceLimitX96,
-            SwapCallbackData({path: abi.encodePacked(params.tokenOut, params.fee, params.tokenIn), payer: msg.sender})
+            SwapCallbackData({
+                path: abi.encodePacked(params.tokenOut, params.fee, params.tokenIn),
+                payer: msg.sender
+            })
         );
 
         require(amountIn <= params.amountInMaximum, 'Too much requested');
