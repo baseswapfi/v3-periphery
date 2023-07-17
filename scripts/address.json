@@ -1,9 +1,10 @@
 {
   "Base": {
     "WETH": "0x4200000000000000000000000000000000000006",
-    "SwapRouter": "0xff139bEa1E15Eff04e8Fa3ac8dd29401C74F323D",
-    "QuoterV2": "0x6d561f79A1C302fD18CFd87aC7b4571Ec84Ca5A7",
-    "NFTDescriptor": "0xE4e56751d115773b61a8DEED0737710139dB55F7",
-    "NonfungibleTokenPositionDescriptor": "0xf0aBd7a92cb9241ceA58b66c0C88F963e92DfD59"
+    "SwapRouter": "",
+    "QuoterV2": "",
+    "NFTDescriptor": "",
+    "NonfungibleTokenPositionDescriptor": "",
+    "NonfungiblePositionManager": ""
   }
 }

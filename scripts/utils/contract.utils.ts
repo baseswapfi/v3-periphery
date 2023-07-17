@@ -44,3 +44,17 @@ export async function deployTokenPositionDescriptor(
 
   return instance;
 }
+
+export async function deployPositionManager(
+  factory: string,
+  WETH: string,
+
+  tokenDescriptor: string
+) {
+  const Factory = await ethers.getContractFactory('NonfungiblePositionManager');
+  const instance = await Factory.deploy(factory, WETH, tokenDescriptor);
+  await instance.deployed();
+  console.log('NonfungiblePositionManager deployed at: ' + instance.address);
+
+  return instance;
+}

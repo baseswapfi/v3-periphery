@@ -1,19 +1,41 @@
-import { deployTokenPositionDescriptor } from './utils/contract.utils';
+import {
+  deployPositionManager,
+  deployQuoterV2,
+  deployRouter,
+  deployTokenPositionDescriptor,
+} from './utils/contract.utils';
 
 const hardhat = require('hardhat');
 
 // BASE
-const FACTORY = '0x1b527E8690F0c57ea546e72Fb0c66a312118A941';
+const UNI_FACTORY = '';
 const WETH = '0x4200000000000000000000000000000000000006';
 
 // ethers.utils.formatBytes32String("ETH")
 const nativeCurrencyLabelBytes =
   '0x4554480000000000000000000000000000000000000000000000000000000000';
-const NFTDescriptor_BASE = '0xE4e56751d115773b61a8DEED0737710139dB55F7';
+
+// const NFTDescriptor_BASE = '';
+// const NonfungibleTokenPositionDescriptor = '';
+
+const UNI_FACTORY_TESTNET = '0xa4A2C546ac14ecEcee8731695B549fc90116C78f';
+
+const SwapRouter_TESTNET = '';
+const QuoterV2_TESTNET = '';
+const NFTDescriptor_TESTNET = '';
+const NonfungibleTokenPositionDescriptor_TESTNET = '';
+const NonfungiblePositionManager_TESTNET = '';
 
 async function main() {
   try {
-    // await deployTokenPositionDescriptor(WETH, nativeCurrencyLabelBytes, NFTDescriptor_BASE);
+    // await deployRouter(UNI_FACTORY_TESTNET, WETH);
+    await deployQuoterV2(UNI_FACTORY_TESTNET, WETH);
+    // await deployTokenPositionDescriptor(WETH, nativeCurrencyLabelBytes, NFTDescriptor_TESTNET);
+    // await deployPositionManager(
+    //   UNI_FACTORY_TESTNET,
+    //   WETH,
+    //   NonfungibleTokenPositionDescriptor_TESTNET
+    // );
   } catch (error) {
     console.log(error);
     process.exit(1);
