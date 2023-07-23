@@ -70,6 +70,11 @@ export default {
       url: `${process.env.ARBITRUM_RPC}`,
       accounts,
     },
+    arbitrum_goerli: {
+      url: process.env.ARBITRUM_GOERLI_RPC || '',
+      accounts,
+      chainId: 421613,
+    },
     optimismKovan: {
       url: `https://optimism-kovan.infura.io/v3/${process.env.INFURA_API_KEY}`,
     },

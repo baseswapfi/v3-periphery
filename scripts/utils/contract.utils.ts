@@ -1,5 +1,14 @@
 import { ethers } from 'hardhat';
 
+export async function deployTickLens() {
+  const TickLens = await ethers.getContractFactory('TickLens');
+  const instance = await TickLens.deploy();
+  await instance.deployed();
+  console.log('TickLens at: ' + instance.address);
+
+  return instance;
+}
+
 export async function deployRouter(factory: string, WETH: string) {
   const SwapRouter = await ethers.getContractFactory('SwapRouter');
   const router = await SwapRouter.deploy(factory, WETH);
@@ -7,6 +16,15 @@ export async function deployRouter(factory: string, WETH: string) {
   console.log('SwapRouter at: ' + router.address);
 
   return router;
+}
+
+export async function deployQuoter(factory: string, WETH: string) {
+  const QuoterV2 = await ethers.getContractFactory('Quoter');
+  const quote = await QuoterV2.deploy(factory, WETH);
+  await quote.deployed();
+  console.log('Quoter at: ' + quote.address);
+
+  return quote;
 }
 
 export async function deployQuoterV2(factory: string, WETH: string) {
