@@ -1,10 +1,10 @@
 {
   "Base": {
-    "factory": "0x7Af75d2C6445fb3D9B41d1574070826cDA3D4A7E",
-    "SwapRouter": "",
-    "QuoterV2": "",
-    "NFTDescriptor": "",
-    "NonfungibleTokenPositionDescriptor": "",
-    "NonfungiblePositionManager": ""
+    "factory": "0x3f6533d37d7623Bf7a396730637CE0F52bf27781",
+    "SwapRouter": "0xA80f87B1872E9242eA94c36dA88eAbab6B1D2A6c",
+    "QuoterV2": "0xAFc31e5B4e6EA3C51471B0b3e9767E5046ba8b02",
+    "NFTDescriptorLibrary": "0xB5D1AB6Dfc161B1323a4126C03255B893175BF84",
+    "NonfungibleTokenPositionDescriptor": "0xB9FBbF664FF83b931e3329fcC09b52aD539624d8",
+    "NonfungiblePositionManager": "0x20C51B3dA2E7821eF62D63a447Ac9E5F8a503065"
   }
 }
