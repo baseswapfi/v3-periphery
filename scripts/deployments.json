@@ -1,6 +1,6 @@
 {
   "Base": {
-    "WETH": "0x4200000000000000000000000000000000000006",
+    "factory": "0x7Af75d2C6445fb3D9B41d1574070826cDA3D4A7E",
     "SwapRouter": "",
     "QuoterV2": "",
     "NFTDescriptor": "",

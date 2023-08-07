@@ -19,8 +19,8 @@ export async function deployRouter(factory: string, WETH: string) {
 }
 
 export async function deployQuoter(factory: string, WETH: string) {
-  const QuoterV2 = await ethers.getContractFactory('Quoter');
-  const quote = await QuoterV2.deploy(factory, WETH);
+  const Quoter = await ethers.getContractFactory('Quoter');
+  const quote = await Quoter.deploy(factory, WETH);
   await quote.deployed();
   console.log('Quoter at: ' + quote.address);
 
