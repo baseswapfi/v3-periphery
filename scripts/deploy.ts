@@ -27,7 +27,7 @@ async function main() {
     // await deployQuoterV2(FACTORY, WETH);
     // await deployTickLens();
     // await deployTokenPositionDescriptor(WETH, nativeCurrencyLabelBytes, null);
-    await deployPositionManager(FACTORY, WETH, '0xc94E9aB330353ff6EeF4AB415f4605616CB998aE');
+    // await deployPositionManager(FACTORY, WETH, NonfungibleTokenPositionDescriptor);
   } catch (error) {
     console.log(error);
     process.exit(1);

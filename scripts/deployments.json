@@ -13,6 +13,20 @@
     "QuoterV2": "0xcd0013Fe2a9389b904aC8Cc22362a067e3d30ede",
     "NFTDescriptorLibrary": "0x62e879c8979694DbC3A4EF1dd324b08Ee3Ac3688",
     "NonfungibleTokenPositionDescriptor": "0xc94E9aB330353ff6EeF4AB415f4605616CB998aE",
-    "NonfungiblePositionManager": "0x36d1Ab9DDD6b59e8F2c01F8e3E9D0AdEcA0E864d"
+    "NonfungiblePositionManager": "0x36d1Ab9DDD6b59e8F2c01F8e3E9D0AdEcA0E864d",
+    "testTokens": [
+      {
+        "token": "Big Booby Things",
+        "address": "0x8DFAf055e21B16302DBf00815e5b4d9b6042a4Df"
+      },
+      {
+        "token": "Gryffindor",
+        "address": "0xc94E9aB330353ff6EeF4AB415f4605616CB998aE"
+      },
+      {
+        "token": "Hogwarts",
+        "address": "0x36d1Ab9DDD6b59e8F2c01F8e3E9D0AdEcA0E864d"
+      }
+    ]
   }
 }
