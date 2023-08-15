@@ -1,10 +1,18 @@
 {
-  "Base": {
+  "base": {
     "factory": "0x3f6533d37d7623Bf7a396730637CE0F52bf27781",
     "SwapRouter": "0xA80f87B1872E9242eA94c36dA88eAbab6B1D2A6c",
     "QuoterV2": "0xAFc31e5B4e6EA3C51471B0b3e9767E5046ba8b02",
     "NFTDescriptorLibrary": "0xB5D1AB6Dfc161B1323a4126C03255B893175BF84",
     "NonfungibleTokenPositionDescriptor": "0xB9FBbF664FF83b931e3329fcC09b52aD539624d8",
     "NonfungiblePositionManager": "0x20C51B3dA2E7821eF62D63a447Ac9E5F8a503065"
+  },
+  "base_goerli": {
+    "factory": "0x7B1B5085AE781a00fDbC1C82565e74DdC2EAeFF1",
+    "SwapRouter": "0x7274E56489Af755981db08089a41D213E7cad562",
+    "QuoterV2": "0xcd0013Fe2a9389b904aC8Cc22362a067e3d30ede",
+    "NFTDescriptorLibrary": "0x62e879c8979694DbC3A4EF1dd324b08Ee3Ac3688",
+    "NonfungibleTokenPositionDescriptor": "0xc94E9aB330353ff6EeF4AB415f4605616CB998aE",
+    "NonfungiblePositionManager": "0x36d1Ab9DDD6b59e8F2c01F8e3E9D0AdEcA0E864d"
   }
 }
