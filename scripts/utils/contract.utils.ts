@@ -1,3 +1,4 @@
+import { SignerWithAddress } from '@nomiclabs/hardhat-ethers/signers';
 import { ethers } from 'hardhat';
 
 export async function deployTickLens() {
@@ -16,6 +17,23 @@ export async function deployRouter(factory: string, WETH: string) {
   console.log('SwapRouter at: ' + router.address);
 
   return router;
+}
+
+// address _factory,
+// address _WETH9,
+// address _nonfungiblePositionManager
+export async function deployMigrator(
+  factory: string,
+  WETH: string,
+  _nonfungiblePositionManager: string,
+  signer: SignerWithAddress
+) {
+  const V3Migrator = await ethers.getContractFactory('V3Migrator', signer);
+  const instance = await V3Migrator.deploy(factory, WETH, _nonfungiblePositionManager);
+  await instance.deployed();
+  console.log('V3Migrator at: ' + instance.address);
+
+  return instance;
 }
 
 export async function deployQuoter(factory: string, WETH: string) {

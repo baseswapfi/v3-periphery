@@ -1,4 +1,6 @@
+import { ethers } from 'hardhat';
 import {
+  deployMigrator,
   deployPositionManager,
   deployQuoter,
   deployQuoterV2,
@@ -22,12 +24,14 @@ const NonfungiblePositionManager = '0x20C51B3dA2E7821eF62D63a447Ac9E5F8a503065';
 
 async function main() {
   try {
+    const signer = (await ethers.getSigners())[0];
     // await deployRouter(FACTORY, WETH);
     // await deployQuoter(FACTORY, WETH);
     // await deployQuoterV2(FACTORY, WETH);
     // await deployTickLens();
     // await deployTokenPositionDescriptor(WETH, nativeCurrencyLabelBytes, null);
     // await deployPositionManager(FACTORY, WETH, NonfungibleTokenPositionDescriptor);
+    await deployMigrator(FACTORY, WETH, NonfungiblePositionManager, signer);
   } catch (error) {
     console.log(error);
     process.exit(1);

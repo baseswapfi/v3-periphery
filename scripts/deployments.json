@@ -5,7 +5,9 @@
     "QuoterV2": "0xAFc31e5B4e6EA3C51471B0b3e9767E5046ba8b02",
     "NFTDescriptorLibrary": "0xB5D1AB6Dfc161B1323a4126C03255B893175BF84",
     "NonfungibleTokenPositionDescriptor": "0xB9FBbF664FF83b931e3329fcC09b52aD539624d8",
-    "NonfungiblePositionManager": "0x20C51B3dA2E7821eF62D63a447Ac9E5F8a503065"
+    "NonfungiblePositionManager": "0x20C51B3dA2E7821eF62D63a447Ac9E5F8a503065",
+    "tickLens": "0x49a3A5cf91DE1b78c43Dc1adD03E8A71f1Ea2e30",
+    "V3Migrator": "0xFE159B4219A5981AB3Dd57EC7F9E6E0F10E2Ce87"
   },
   "base_goerli": {
     "factory": "0x7B1B5085AE781a00fDbC1C82565e74DdC2EAeFF1",
