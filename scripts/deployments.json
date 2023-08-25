@@ -10,12 +10,13 @@
     "V3Migrator": "0xFE159B4219A5981AB3Dd57EC7F9E6E0F10E2Ce87"
   },
   "base_goerli": {
-    "factory": "0x7B1B5085AE781a00fDbC1C82565e74DdC2EAeFF1",
-    "SwapRouter": "0x7274E56489Af755981db08089a41D213E7cad562",
-    "QuoterV2": "0xcd0013Fe2a9389b904aC8Cc22362a067e3d30ede",
-    "NFTDescriptorLibrary": "0x62e879c8979694DbC3A4EF1dd324b08Ee3Ac3688",
-    "NonfungibleTokenPositionDescriptor": "0xc94E9aB330353ff6EeF4AB415f4605616CB998aE",
-    "NonfungiblePositionManager": "0x36d1Ab9DDD6b59e8F2c01F8e3E9D0AdEcA0E864d",
+    "factory": "0xd5046B976188EB40f6DE40fB527F89c05b323385",
+    "SwapRouter": "0xaBEb4DeD0b07460F9C9edb85864DFd3a6865D570",
+    "QuoterV2": "0x03d4C4b1B115c068Ef864De2e21E724a758892A2",
+    "NFTDescriptorLibrary": "0xE4750593d1fC8E74b31549212899A72162f315Fa",
+    "NonfungibleTokenPositionDescriptor": "0xD15da75772723e0FCa1623e6F937F135562878Cd",
+    "NonfungiblePositionManager": "0xD62eFF97A2A21632Cd912De48786FAcddD4938A5",
+    "TickLens": "0x7C5a65d861A9C0Ef68d9A07edD8110402Ff495cF",
     "testTokens": [
       {
         "token": "Big Booby Things",

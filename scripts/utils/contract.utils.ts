@@ -10,8 +10,8 @@ export async function deployTickLens() {
   return instance;
 }
 
-export async function deployRouter(factory: string, WETH: string) {
-  const SwapRouter = await ethers.getContractFactory('SwapRouter');
+export async function deployRouter(factory: string, WETH: string, signer: SignerWithAddress) {
+  const SwapRouter = await ethers.getContractFactory('SwapRouter', signer);
   const router = await SwapRouter.deploy(factory, WETH);
   await router.deployed();
   console.log('SwapRouter at: ' + router.address);
