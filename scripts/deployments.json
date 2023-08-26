@@ -7,7 +7,7 @@
     "NonfungibleTokenPositionDescriptor": "0x91b982439132987b6B656eC4B3d0EE4F3B5cb26B",
     "NonfungiblePositionManager": "0xb0bbb78d7dDD1e8c7c6d0f9B49ED3478B4bdE455",
     "tickLens": "0x49a3A5cf91DE1b78c43Dc1adD03E8A71f1Ea2e30",
-    "V3Migrator": ""
+    "V3Migrator": "0x4710B12426270D17936Ea61d8314e099062a2C6a"
   },
   "base_goerli": {
     "factory": "0xd5046B976188EB40f6DE40fB527F89c05b323385",
