@@ -16,17 +16,17 @@ const nativeCurrencyLabelBytes =
   '0x4554480000000000000000000000000000000000000000000000000000000000';
 
 const WETH = '0x4200000000000000000000000000000000000006';
-const FACTORY = '0xd5046B976188EB40f6DE40fB527F89c05b323385';
+const FACTORY = '0x60a610de5CB6aa716ba79cEa926cbcc7bFFc43e7';
 
-const NFTDescriptorLibrary = '0xE4750593d1fC8E74b31549212899A72162f315Fa';
-const NonfungibleTokenPositionDescriptor = '0xD15da75772723e0FCa1623e6F937F135562878Cd';
-const NonfungiblePositionManager = '0xD62eFF97A2A21632Cd912De48786FAcddD4938A5';
-const ROUTER = '';
+const NFTDescriptorLibrary = '0xC81f114F8d7B12363211F64F649D2376d654499D';
+const NonfungibleTokenPositionDescriptor = '0x91b982439132987b6B656eC4B3d0EE4F3B5cb26B';
+const NonfungiblePositionManager = '0xb0bbb78d7dDD1e8c7c6d0f9B49ED3478B4bdE455';
+const ROUTER = '0x14963869592E41a2ecD7524bD213cFC3044AdF75';
 
 async function main() {
   try {
     const signer = (await ethers.getSigners())[0];
-    await deployRouter(FACTORY, WETH, signer);
+    // await deployRouter(FACTORY, WETH, signer);
     // await deployQuoter(FACTORY, WETH);
     // await deployQuoterV2(FACTORY, WETH);
     // await deployTickLens();

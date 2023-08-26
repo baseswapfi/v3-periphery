@@ -1,13 +1,13 @@
 {
   "base": {
-    "factory": "0x3f6533d37d7623Bf7a396730637CE0F52bf27781",
-    "SwapRouter": "0xA80f87B1872E9242eA94c36dA88eAbab6B1D2A6c",
-    "QuoterV2": "0xAFc31e5B4e6EA3C51471B0b3e9767E5046ba8b02",
-    "NFTDescriptorLibrary": "0xB5D1AB6Dfc161B1323a4126C03255B893175BF84",
-    "NonfungibleTokenPositionDescriptor": "0xB9FBbF664FF83b931e3329fcC09b52aD539624d8",
-    "NonfungiblePositionManager": "0x20C51B3dA2E7821eF62D63a447Ac9E5F8a503065",
+    "factory": "0x60a610de5CB6aa716ba79cEa926cbcc7bFFc43e7",
+    "SwapRouter": "0x14963869592E41a2ecD7524bD213cFC3044AdF75",
+    "QuoterV2": "",
+    "NFTDescriptorLibrary": "0xC81f114F8d7B12363211F64F649D2376d654499D",
+    "NonfungibleTokenPositionDescriptor": "0x91b982439132987b6B656eC4B3d0EE4F3B5cb26B",
+    "NonfungiblePositionManager": "0xb0bbb78d7dDD1e8c7c6d0f9B49ED3478B4bdE455",
     "tickLens": "0x49a3A5cf91DE1b78c43Dc1adD03E8A71f1Ea2e30",
-    "V3Migrator": "0xFE159B4219A5981AB3Dd57EC7F9E6E0F10E2Ce87"
+    "V3Migrator": ""
   },
   "base_goerli": {
     "factory": "0xd5046B976188EB40f6DE40fB527F89c05b323385",
