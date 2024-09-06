@@ -54,48 +54,49 @@ const DEFAULT_COMPILER_SETTINGS = {
 
 export default {
   networks: {
-    hardhat: {
-      allowUnlimitedContractSize: false,
-    },
-    mainnet: {
-      url: `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
-    },
-    goerli: {
-      url: `https://goerli.infura.io/v3/${process.env.INFURA_API_KEY}`,
-    },
-    arbitrumRinkeby: {
-      url: `https://arbitrum-rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`,
-    },
-    arbitrum: {
-      url: `${process.env.ARBITRUM_RPC}`,
-      accounts,
-    },
-    arbitrum_goerli: {
-      url: process.env.ARBITRUM_GOERLI_RPC || '',
-      accounts,
-      chainId: 421613,
-    },
-    optimismKovan: {
-      url: `https://optimism-kovan.infura.io/v3/${process.env.INFURA_API_KEY}`,
-    },
+    // hardhat: {
+    //   allowUnlimitedContractSize: false,
+    // },
+    // mainnet: {
+    //   url: `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
+    // },
+    // goerli: {
+    //   url: `https://goerli.infura.io/v3/${process.env.INFURA_API_KEY}`,
+    // },
+    // arbitrumRinkeby: {
+    //   url: `https://arbitrum-rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`,
+    // },
+    // arbitrum: {
+    //   url: `${process.env.ARBITRUM_RPC}`,
+    //   accounts,
+    // },
+    // arbitrum_goerli: {
+    //   url: process.env.ARBITRUM_GOERLI_RPC || '',
+    //   accounts,
+    //   chainId: 421613,
+    // },
+    // optimismKovan: {
+    //   url: `https://optimism-kovan.infura.io/v3/${process.env.INFURA_API_KEY}`,
+    // },
     optimism: {
       url: `${process.env.OPTIMISM_RPC}`,
       accounts,
+      chainId: 10,
     },
-    base: {
-      url: process.env.BASE_RPC || '',
-      accounts,
-      chainId: 8453,
-      // gas: 500000,
-      // gasPrice: 100,
-    },
-    base_goerli: {
-      url: process.env.BASE_GOERLI_RPC,
-      accounts,
-      chainId: 84531,
-      gas: 500000,
-      gasPrice: 100,
-    },
+    // base: {
+    //   url: process.env.BASE_RPC || '',
+    //   accounts,
+    //   chainId: 8453,
+    //   // gas: 500000,
+    //   // gasPrice: 100,
+    // },
+    // base_goerli: {
+    //   url: process.env.BASE_GOERLI_RPC,
+    //   accounts,
+    //   chainId: 84531,
+    //   gas: 500000,
+    //   gasPrice: 100,
+    // },
   },
   etherscan: {
     etherscan: {
