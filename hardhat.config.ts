@@ -99,20 +99,18 @@ export default {
     // },
   },
   etherscan: {
-    etherscan: {
-      apiKey: process.env.ETHERSCAN_API_KEY,
-      customChains: [
-        {
-          network: 'base',
-          chainId: 8453,
-          apiKey: process.env.ETHERSCAN_API_KEY,
-          urls: {
-            apiURL: 'https://api.basescan.org',
-            browserURL: 'https://basescan.org',
-          },
+    apiKey: process.env.ETHERSCAN_API_KEY,
+    customChains: [
+      {
+        network: 'base',
+        chainId: 8453,
+        apiKey: process.env.ETHERSCAN_API_KEY,
+        urls: {
+          apiURL: 'https://api.basescan.org',
+          browserURL: 'https://basescan.org',
         },
-      ],
-    },
+      },
+    ],
   },
   solidity: {
     compilers: [DEFAULT_COMPILER_SETTINGS],

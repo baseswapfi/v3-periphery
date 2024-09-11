@@ -24,11 +24,11 @@ const ROUTER = '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB';
 
 async function main() {
   try {
-    // const signer = (await hardhat.ethers.getSigners())[0];
-    // await deployRouter(FACTORY, WETH, signer);
-    // await deployQuoterV2(FACTORY, WETH);
-    // await deployTickLens();
-    // await deployTokenPositionDescriptor(WETH, nativeCurrencyLabelBytes, undefined);
+    const signer = (await hardhat.ethers.getSigners())[0];
+    await deployRouter(FACTORY, WETH, signer);
+    await deployQuoterV2(FACTORY, WETH);
+    await deployTickLens();
+    await deployTokenPositionDescriptor(WETH, nativeCurrencyLabelBytes, NFTDescriptorLibrary);
     await deployPositionManager(FACTORY, WETH, NonfungibleTokenPositionDescriptor);
     // await deployMigrator(FACTORY, WETH, NonfungiblePositionManager, signer);
   } catch (error) {
