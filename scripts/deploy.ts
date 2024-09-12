@@ -19,16 +19,16 @@ const FACTORY = '0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720';
 
 const NFTDescriptorLibrary = '0x0fE9E7B39dbdfe32c9F37FAcCec6b33d290CbF50';
 const NonfungibleTokenPositionDescriptor = '0x327Df1E6de05895d2ab08513aaDD9313Fe505d86';
-const NonfungiblePositionManager = '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9';
+const NonfungiblePositionManager = '0x74a52eb08d699CD8BE1d42dA4B241d526B8a8285';
 const ROUTER = '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB';
 
 async function main() {
   try {
-    const signer = (await hardhat.ethers.getSigners())[0];
-    await deployRouter(FACTORY, WETH, signer);
-    await deployQuoterV2(FACTORY, WETH);
-    await deployTickLens();
-    await deployTokenPositionDescriptor(WETH, nativeCurrencyLabelBytes, NFTDescriptorLibrary);
+    // const signer = (await hardhat.ethers.getSigners())[0];
+    // await deployRouter(FACTORY, WETH, signer);
+    // await deployQuoterV2(FACTORY, WETH);
+    // await deployTickLens();
+    // await deployTokenPositionDescriptor(WETH, nativeCurrencyLabelBytes, NFTDescriptorLibrary);
     await deployPositionManager(FACTORY, WETH, NonfungibleTokenPositionDescriptor);
     // await deployMigrator(FACTORY, WETH, NonfungiblePositionManager, signer);
   } catch (error) {
