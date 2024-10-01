@@ -97,6 +97,11 @@ export default {
     //   gas: 500000,
     //   gasPrice: 100,
     // },
+    sonicTestnet: {
+      url: process.env.SONIC_TESTNET_RPC,
+      accounts,
+      chainId: 64165,
+    },
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,

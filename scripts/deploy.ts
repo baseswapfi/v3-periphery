@@ -10,17 +10,17 @@ import {
 
 const hardhat = require('hardhat');
 
-// ethers.utils.formatBytes32String("ETH")
+// ethers.utils.formatBytes32String("S")
 const nativeCurrencyLabelBytes =
-  '0x4554480000000000000000000000000000000000000000000000000000000000';
+  '0x5300000000000000000000000000000000000000000000000000000000000000';
 
-const WETH = '0x4200000000000000000000000000000000000006';
-const FACTORY = '0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720';
+const WETH = '';
+const FACTORY = '';
 
-const NFTDescriptorLibrary = '0x0fE9E7B39dbdfe32c9F37FAcCec6b33d290CbF50';
-const NonfungibleTokenPositionDescriptor = '0x327Df1E6de05895d2ab08513aaDD9313Fe505d86';
-const NonfungiblePositionManager = '0x74a52eb08d699CD8BE1d42dA4B241d526B8a8285';
-const ROUTER = '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB';
+const NFTDescriptorLibrary = '';
+const NonfungibleTokenPositionDescriptor = '';
+const NonfungiblePositionManager = '';
+const ROUTER = '';
 
 async function main() {
   try {
