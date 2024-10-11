@@ -46,7 +46,7 @@
     "factory": "0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720",
     "SwapRouter": "0x6F1a2F63Ea06B475EDBf2E6393406058C12A7910",
     "QuoterV2": "0xFb68BBfaEF679C1E653b5cE271a0A383c0df6B45",
-    "NFTDescriptorLibrary": "NetworkChain.SONIC_TESTNET",
+    "NFTDescriptorLibrary": "0x327Df1E6de05895d2ab08513aaDD9313Fe505d86",
     "NonfungibleTokenPositionDescriptor": "0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9",
     "NonfungiblePositionManager": "0x2B0A43DCcBD7d42c18F6A83F86D1a19fA58d541A",
     "tickLens": "0x0fE9E7B39dbdfe32c9F37FAcCec6b33d290CbF50",
