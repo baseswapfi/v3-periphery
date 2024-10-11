@@ -51,5 +51,15 @@
     "NonfungiblePositionManager": "0x2B0A43DCcBD7d42c18F6A83F86D1a19fA58d541A",
     "tickLens": "0x0fE9E7B39dbdfe32c9F37FAcCec6b33d290CbF50",
     "V3Migrator": ""
+  },
+  "soneiumTestnet": {
+    "factory": "0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720",
+    "SwapRouter": "",
+    "QuoterV2": "",
+    "NFTDescriptorLibrary": "",
+    "NonfungibleTokenPositionDescriptor": "",
+    "NonfungiblePositionManager": "",
+    "tickLens": "",
+    "V3Migrator": ""
   }
 }

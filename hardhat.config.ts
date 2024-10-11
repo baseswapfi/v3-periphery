@@ -102,6 +102,11 @@ export default {
       accounts,
       chainId: 64165,
     },
+    soneiumTestnet: {
+      url: process.env.SONEIUM_TESTNET_RPC || '',
+      accounts,
+      chainId: 1946,
+    },
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,
