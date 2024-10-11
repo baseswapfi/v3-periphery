@@ -54,12 +54,12 @@
   },
   "soneiumTestnet": {
     "factory": "0xe52a36Bb76e8f40e1117db5Ff14Bd1f7b058B720",
-    "SwapRouter": "",
-    "QuoterV2": "",
-    "NFTDescriptorLibrary": "",
-    "NonfungibleTokenPositionDescriptor": "",
-    "NonfungiblePositionManager": "",
-    "tickLens": "",
+    "SwapRouter": "0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB",
+    "QuoterV2": "0x6F1a2F63Ea06B475EDBf2E6393406058C12A7910",
+    "NFTDescriptorLibrary": "0x0fE9E7B39dbdfe32c9F37FAcCec6b33d290CbF50",
+    "NonfungibleTokenPositionDescriptor": "0x327Df1E6de05895d2ab08513aaDD9313Fe505d86",
+    "NonfungiblePositionManager": "0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9",
+    "tickLens": "0xFb68BBfaEF679C1E653b5cE271a0A383c0df6B45",
     "V3Migrator": ""
   }
 }
